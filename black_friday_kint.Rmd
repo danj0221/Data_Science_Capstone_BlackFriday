@@ -31,34 +31,59 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Overview
 
 The purpose of this project is to apply advanced machine learning techniques to a publicly available dataset as part of the 'Data Science: Capstone' course (PH125.9x)offered by edX HarvardX.
-
-The project goes beyond focuses on exploring and analyzing the data using machine learning algorithms.The goal is to gain insights from the analysis and effectively communicate the process and findings [1].
+The project goes beyond focuses on exploring and analyzing the data using machine learning algorithms.The goal is to gain insights from the analysis and effectively communicate the process and findings.
 
 ## Introduction
 
-The term 'Black Friday' didn't start as a shopping-related term.
+The term "*Black Friday*" didn't start as a shopping-related term.
 Instead, it emerged during a financial crisis.This explanation looks back at the historical context that led to the term's creation, tracing its beginnings to a significant event that happened on a memorable day in September.The term 'Black Friday' first appeared in history on September 24, 1869 [1].
 
-Black Friday is a major shopping event that happens on the day after Thanksgiving in the United States.It's seen as the start of the Christmas shopping season and is known for big discounts and special offers from stores.Black Friday is one of the busiest shopping days of the year, with shoppers lining up early in the morning to get great deals. In recent years, online shopping's popularity has led to the rise of Cyber Monday, which takes place the Monday after Black Friday and offers online sales and discounts. Black Friday is now observed in other parts of the world, like Canada, the United Kingdom, and Australia [2].
+Black Friday is a major shopping event that happens on the day after Thanksgiving in the United States.It's seen as the start of the Christmas shopping season and is known for big discounts and special offers from stores.Black Friday is one of the busiest shopping days of the year, with shoppers lining up early in the morning to get great deals.
+In recent years, online shopping's popularity has led to the rise of Cyber Monday, which takes place the Monday after Black Friday and offers online sales and discounts.
+Black Friday is now observed in other parts of the world, like Canada, the United Kingdom, and Australia [2].
 
-In retrospection, the origins of "Black Friday" emerge not as a celebration of consumerism, but rather as a historical marker of a financial crisis of considerable magnitude.The term's inception, intertwined with the machinations of Gould and Fisk, serves as a poignant reminder of the intricacies and fragility inherent within the realm of finance.The events of that fateful September day in 1,869 stand as a testament to the far-reaching consequences of unscrupulous financial manipulation, casting a somber and profound shadow over the narrative of "Black Friday".
+In retrospection, the origins of "*Black Friday*" emerge not as a celebration of consumerism, but rather as a historical marker of a financial crisis of considerable magnitude.The term's inception, intertwined with the machinations of Gould and Fisk, serves as a poignant reminder of the intricacies and fragility inherent within the realm of finance.The events of that fateful September day in 1,869 stand as a testament to the far-reaching consequences of unscrupulous financial manipulation, casting a somber and profound shadow over the narrative of "*Black Friday*".
 
 The modern incarnation of Black Friday has evolved into a grand spectacle characterized by an array of sales, enticing promotions, and serpentine queues forming outside retail establishments.Esteemed retailers including Target, Best Buy, Amazon, among others, eagerly anticipate this annual occasion, anticipating that consumers will seize the opportunity to partake in extraordinary bargains and exclusive offers.
 
-Beyond its immediate scope, the term "Black Friday" has also catalyzed the emergence of additional retail-themed observances, including "Cyber Monday," "Small Business Saturday," and "Giving Tuesday"[3]. Herein lie several noteworthy statistical highlights extracted from the events of "Black Friday" in the year 2018:
+Beyond its immediate scope, the term "*Black Friday*" has also catalyzed the emergence of additional retail-themed observances, including "*Cyber Monday*," "*Small Business Saturday*," and "*Giving Tuesday*"[3].
+Herein lie several noteworthy statistical highlights extracted from the events of "Black Friday" in the year 2018:
 
 1.  Foot traffic of patrons within physical stores experienced a marginal decline of 1.7% as compared to the preceding year of 2017.
-2.  Online consumer expenditures witnessed a robust surge, tallying an impressive $6.22 billion, reflecting a substantial increase of 23.6% from the corresponding figures of 2017.
+2.  Online consumer expenditures witnessed a robust surge, tallying an impressive \$6.22 billion, reflecting a substantial increase of 23.6% from the corresponding figures of 2017.
 
 ## Executive Summary
 
-The main goal of this project is to harness the power of machine learning models and vector support techniques to analyze and forecast the sales volume of "Black Friday." Intend to explore a variety of factors, including Gender, Top Sellers, Age, City, Marital Status, and occupation, to gain insights into what drives sales during this event.
+The main goal of this project is to harness the power of machine learning models and vector support techniques to analyze and forecast the sales volume of "*Black Friday.*" Intend to explore a variety of factors, including Gender, Top Sellers, Age, City, Marital Status, and occupation, to gain insights into what drives sales during this event.
 
-To achieve this objective, employ data transformation and feature engineering techniques. These processes are crucial for enhancing the accuracy of predictions. We will strive to optimize the models by utilizing various approaches and methods.
+To achieve this objective, employ data transformation and feature engineering techniques.
+These processes are crucial for enhancing the accuracy of predictions.
+Strive to optimize the models by utilizing various approaches and methods.
 
 As part of this project, delve into several modeling techniques to assess their effectiveness in predicting Black Friday sales.Throughout the project, utilize various evaluation metrics to measure the performance of each modeling approach.
 
 Aim is to identify the most suitable model that provides the most accurate predictions.This project not only involves data analysis and machine learning but also the critical task of selecting the most effective model to improve understanding of Black Friday sales patterns.
+
+## Objectives
+
+1.  **Analyze Historical Black Friday Sales Data:**
+    i.  To explore and understand the patterns and trends in consumer behavior and sales during past Black Friday events.
+    ii. To investigate how different demographic factors, such as age, gender, and occupation, influence purchasing behavior.
+    iii. To assess the impact of various product categories on overall sales.
+2.  **Identify Key Factors Influencing Consumer Purchasing Decisions:**
+    i.  To determine the most significant variables that drive consumers' purchasing decisions during Black Friday.
+    ii. To analyze the relationship between consumer demographics, product types, and purchase amounts.
+    iii. To explore how factors such as city category, years of stay in the current city, and marital status affect buying behavior.
+3.  **Predict Future Sales Trends Using Machine Learning Algorithms:**
+    i.  To develop predictive models that can forecast future sales based on historical data.
+    ii. To evaluate the performance of different machine learning techniques in predicting purchase amounts.
+    iii. To create reliable and accurate models that retailers can use to anticipate sales trends and prepare accordingly.
+4.  **Provide Actionable Insights for Retailers to Enhance Their Sales Strategies:**
+    i.  To offer data-driven recommendations for retailers to optimize their inventory and marketing strategies.
+    ii. To identify target customer segments that are most likely to generate higher sales.
+    iii. To suggest effective promotional strategies and personalized marketing approaches based on consumer behavior analysis.
+
+These objectives aim to equip retailers with valuable insights and tools to maximize their success during Black Friday and beyond, ensuring they can meet customer demands efficiently and enhance overall sales performance.
 
 \newpage
 
@@ -71,38 +96,30 @@ In Exploratory Data Analysis (EDA), methods and analysis refer to the techniques
 EDA is a crucial step in the data analysis process as it helps uncover patterns, trends, anomalies, and relationships within the data.
 Here's a brief overview of methods and analysis in EDA:
 
-1. **Descriptive Statistics**
-Descriptive statistics provide a summary of the main aspects of the dataset.Measures like the mean (average), median (middle value), and mode (most frequent value) offer insights into the central tendency of the data.
+1.  **Descriptive Statistics:** Descriptive statistics provide a summary of the main aspects of the dataset.Measures like the mean (average), median (middle value), and mode (most frequent value) offer insights into the central tendency of the data.
 
-2. **Range and Variability**
-Understanding the range (difference between the maximum and minimum values) and variability (standard deviation, interquartile range) helps gauge the spread of the data.
+2.  **Range and Variability:** Understanding the range (difference between the maximum and minimum values) and variability (standard deviation, interquartile range) helps gauge the spread of the data.
 
-3. **Frequency Distribution**
-Creating histograms and frequency tables helps visualize the distribution of values in the dataset.
+3.  **Frequency Distribution:** Creating histograms and frequency tables helps visualize the distribution of values in the dataset.
 
-4. **Data Visualization**
-   i. **Histograms:** A graphical representation of the distribution of a dataset, showing the frequency of different values.
+4.  **Data Visualization:**
 
-   ii. **Box Plots (Box-and-Whisker Plots):** Box plots provide a visual summary of the distribution, including the median, quartiles, and potential outliers.
+    i.  **Histograms:** A graphical representation of the distribution of a dataset, showing the frequency of different values.
+    ii. **Box Plots (Box-and-Whisker Plots):** Box plots provide a visual summary of the distribution, including the median, quartiles, and potential outliers.
+    iii. **Scatter Plots:** Used to explore relationships between two continuous variables. Each point on the plot represents a data point.
+    iv. **Pair Plots:** For multivariate analysis, pair plots display scatter plots for all pairs of variables in the dataset.
+    v.  **Heatmaps:** Visualizing the correlation matrix to understand relationships between variables.
 
-   iv. **Scatter Plots:** Used to explore relationships between two continuous variables. Each point on the plot represents a data point.
+5.  **Data Cleaning:** Identifying and handling missing data.Dealing with outliers that might affect the analysis.
 
-   v. **Pair Plots:** For multivariate analysis, pair plots display scatter plots for all pairs of variables in the dataset.
+    i.  **Dimensionality Reduction:**Techniques like Principal Component Analysis (PCA) or t-Distributed Stochastic Neighbor Embedding (t-SNE) can be applied to visualize high-dimensional data in a lower-dimensional space.
+    ii. **Pattern Recognition:** Identifying patterns or trends in the data that might indicate interesting features or relationships.
+    iii. **Statistical Tests:** Conducting basic statistical tests to check assumptions or explore relationships, though this is more common in confirmatory data analysis.
 
-   vi. **Heatmaps:** Visualizing the correlation matrix to understand relationships between variables.
+6.  **Interactive Exploration:** Using tools like interactive dashboards or applications to explore the data dynamically.
 
-5. **Data Cleaning**
-Identifying and handling missing data.Dealing with outliers that might affect the analysis.
-
-   i.  **Dimensionality Reduction:**Techniques like Principal Component Analysis (PCA) or t-Distributed Stochastic Neighbor Embedding (t-SNE) can be applied to visualize high-dimensional data in a lower-dimensional space.
-
-   ii.  **Pattern Recognition:** Identifying patterns or trends in the data that might indicate interesting features or relationships.
-
-   iii.  **Statistical Tests:** Conducting basic statistical tests to check assumptions or explore relationships, though this is more common in confirmatory data analysis.
-
-4.  **Interactive Exploration:** Using tools like interactive dashboards or applications to explore the data dynamically.
-
-The goal of EDA is to gain insights into the data, generate hypotheses, and inform the next steps in the analysis.It's a flexible and iterative process that allows analysts to adapt their approach based on the discoveries made during exploration.
+The goal of EDA is to gain insights into the data, generate hypotheses, and inform the next steps in the analysis.
+It's a flexible and iterative process that allows analysts to adapt their approach based on the discoveries made during exploration.
 
 ### Exploratory Data Analysis (EDA)
 
@@ -162,8 +179,8 @@ library(tidyr)
 library(dplyr)
 ```
 
-For the purpose of visualizing and delving into dataset, harness the capabilities of the "tidyverse" package.This package is renowned for its user-friendly syntax and an extensive array of valuable functions.
-To further enhance the visual representation of plots, also enlist the "scales" package, facilitating tailored adjustments to plot axes.In the culminating phase of this kernel, the "arules" package will come to the fore, playing an integral role in Association Rule Learning and the Apriori algorithm.
+For the purpose of visualizing and delving into dataset, harness the capabilities of the "*tidyverse*" package.This package is renowned for its user-friendly syntax and an extensive array of valuable functions.
+To further enhance the visual representation of plots, also enlist the "*scales*" package, facilitating tailored adjustments to plot axes.In the culminating phase of this kernel, the "*arules*" package will come to the fore, playing an integral role in Association Rule Learning and the Apriori algorithm.
 
 Comprehensive information pertaining to all the packages integrated into this EDA can be found in the Works Cited section of this kernel.Now, let us embark upon journey with an initial high-level overview of the entirety of the dataset.
 
@@ -193,13 +210,16 @@ Upon perusing the initial rows of dataset, a distinctive pattern emerges:
 
 2.  As an analysis advances, this delineation will assume paramount significance when aggregate transactions based on User_ID, culminating in an aggregation of purchases attributed to each unique customer.
 
-A notable critique pertinent to this dataset pertains to the absence of a definitive key that correlates various Product_IDs with their corresponding item descriptions. This lack of explicit linkage (for instance, an inability to seamlessly correlate P00265242 with a readily identifiable item) potentially poses a challenge.
+A notable critique pertinent to this dataset pertains to the absence of a definitive key that correlates various Product_IDs with their corresponding item descriptions.
+This lack of explicit linkage (for instance, an inability to seamlessly correlate P00265242 with a readily identifiable item) potentially poses a challenge.
 
 In a real-world context, the ideal scenario would involve a supplementary dataset furnishing comprehensive information, coupling item names with their respective Product_IDs.The integration of such supplementary data, while not directly influencing EDA, would substantially enhance the efficacy of the Apriori algorithm implementation and foster a more lucid interpretation of certain facets within EDA.
 
 ### Gender
 
-Initiating exploratory journey, initial focal point shall be the examination of the gender distribution among shoppers frequenting this establishment. Given that each row corresponds to a distinct transaction, a preliminary step entails grouping the data by User_ID to eliminate any duplicate entries. This process will serve to streamline the analysis and facilitate an accurate portrayal of the gender distribution within the shopper demographic.
+Initiating exploratory journey, initial focal point shall be the examination of the gender distribution among shoppers frequenting this establishment.
+Given that each row corresponds to a distinct transaction, a preliminary step entails grouping the data by User_ID to eliminate any duplicate entries.
+This process will serve to streamline the analysis and facilitate an accurate portrayal of the gender distribution within the shopper demographic.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 dataset_gender = dataset %>%
@@ -224,7 +244,8 @@ genderDist  = ggplot(data = dataset_gender) +
 print(genderDist)
 ```
 
-Evidently, the male demographic significantly outweighs the female counterpart in terms of shopping participation on Black Friday within store. This gender distribution metric assumes particular significance for retailers, as it can potentially steer decisions regarding store layout, product assortment, and other variables, contingent upon the proportion of male and female shoppers.
+Evidently, the male demographic significantly outweighs the female counterpart in terms of shopping participation on Black Friday within store.
+This gender distribution metric assumes particular significance for retailers, as it can potentially steer decisions regarding store layout, product assortment, and other variables, contingent upon the proportion of male and female shoppers.
 
 ### Purchases between Female and Male shoppers
 
@@ -278,11 +299,15 @@ genderAverage  = ggplot(data = average_spending_gender) +
 print(genderAverage)
 ```
 
-A compelling observation comes to light through visualization.Despite the relative disparity in the frequency of purchases between female and male shoppers within this particular store, the average transaction amount for females is remarkably close to that of their male counterparts. It is imperative to exercise caution in interpreting these results, recognizing the need to consider the scale of these expenditures.While females are nearly matching the average spending of males, it's important to underscore that, on average, their expenditures are still approximately 250,000 units lower than those of males. This insight underscores the significance of contextualizing the data within a broader framework.
+A compelling observation comes to light through visualization.Despite the relative disparity in the frequency of purchases between female and male shoppers within this particular store, the average transaction amount for females is remarkably close to that of their male counterparts.
+It is imperative to exercise caution in interpreting these results, recognizing the need to consider the scale of these expenditures.While females are nearly matching the average spending of males, it's important to underscore that, on average, their expenditures are still approximately 250,000 units lower than those of males.
+This insight underscores the significance of contextualizing the data within a broader framework.
 
 ### Top Sellers
 
-Transitioning focus, let us now embark on an exploration of our best-performing products. In this context, forego the grouping of data by product ID, as our intention is to retain duplicate entries. This approach ensures a comprehensive examination, accounting for scenarios where customers procure multiple quantities of the same product.
+Transitioning focus, let us now embark on an exploration of best-performing products.
+In this context, forego the grouping of data by product ID, as intention is to retain duplicate entries.
+This approach ensures a comprehensive examination, accounting for scenarios where customers procure multiple quantities of the same product.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 top_sellers = dataset %>%
@@ -319,8 +344,7 @@ From analysis, it is evident that this particular product falls within the categ
 As highlighted earlier, the absence of an explicit key detailing item names poses a limitation in identifying the precise nature of this product.
 An intriguing revelation surfaces as observe variations in the purchase prices of the same product across different customers.
 
-This phenomenon could potentially be attributed to an array of factors, encompassing "Black Friday" promotions, discounts, or the utilization of distinct coupon codes.
-
+This phenomenon could potentially be attributed to an array of factors, encompassing *"Black Friday"* promotions, discounts, or the utilization of distinct coupon codes.
 Alternatively, a deeper investigation may be warranted to unearth the underlying rationale for the disparities in purchase prices of an identical product among diverse customers.
 
 ### Correlation between Gender and the Best Selling Product
@@ -346,7 +370,9 @@ genderDist_bs  = ggplot(data = best_seller) +
 print(genderDist_bs)
 ```
 
-Upon a comprehensive review of the aggregate dataset, it is apparent that both the purchasers of the best-selling product and the purchasers of all products collectively exhibit a relatively balanced gender distribution, with approximately 25% representing females and 75% representing males. Although a subtle disparity is discernible, the overarching inference suggests that best-selling product does not distinctly cater to a particular gender demographic.Transitioning to the examination of the Age variable, analytically trajectory proceeds.A similar distribution between genders to overall dataset gender split - lets confirm.
+Upon a comprehensive review of the aggregate dataset, it is apparent that both the purchasers of the best-selling product and the purchasers of all products collectively exhibit a relatively balanced gender distribution, with approximately 25% representing females and 75% representing males.
+
+Although a subtle disparity is discernible, the overarching inference suggests that best-selling product does not distinctly cater to a particular gender demographic.Transitioning to the examination of the Age variable, analytically trajectory proceeds.A similar distribution between genders to overall dataset gender split - lets confirm.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 genderDist_bs_prop = ggplot(data = best_seller) + 
@@ -392,7 +418,7 @@ print(customers_age_vis)
 
 ### Purchasing behavior of different Age groups
 
-Further, create a similar chart depicting the age distribution specifically within the "best seller" category to identify any potential trends:
+Further, create a similar chart depicting the age distribution specifically within the "*best seller*" category to identify any potential trends:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 ageDist_bs  = ggplot(data = best_seller) +
@@ -414,12 +440,13 @@ Particularly, customers aged over 45 appear to be slightly less inclined to purc
 grid.arrange(customers_age_vis, ageDist_bs, ncol=2)
 ```
 
-This in-depth exploration of age provides valuable insights into the purchasing behavior of different age groups. As shift focus to another variable, quest for comprehensive analysis continues.
+This in-depth exploration of age provides valuable insights into the purchasing behavior of different age groups.
+As shift focus to another variable, quest for comprehensive analysis continues.
 
 ### City
 
-Certainly, can proceed by constructing a table that presents each User_ID alongside its corresponding City_Category. This will serve as a foundation step for  subsequentanalytical exploration, which will delve into the distribution of shoppers across different city categories.
-
+Certainly, can proceed by constructing a table that presents each User_ID alongside its corresponding City_Category.
+This will serve as a foundation step for subsequent analytical exploration, which will delve into the distribution of shoppers across different city categories.
 To achieve this, employ the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
@@ -429,7 +456,8 @@ customers_location =  dataset %>%
 head(customers_location)
 ```
 
-This table will provide a comprehensive snapshot, pairing each distinct User_ID with its associated City_Category. This will serve as a starting point for us to uncover trends and insights related to shopping behavior based on geographical locations.
+This table will provide a comprehensive snapshot, pairing each distinct User_ID with its associated City_Category.
+This will serve as a starting point for us to uncover trends and insights related to shopping behavior based on geographical locations.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 customers_location_vis = ggplot(data = customers_location) +
@@ -442,8 +470,8 @@ print(customers_location_vis)
 ```
 
 Observation unveils that the majority of customers are residents of City C. Building upon this insight, proceed to calculate the total purchase amount attributed to each city category.
-
-This subsequent analysis aims to shed light on which city's customers have made the most substantial expenditures at store. To initiate this computation, can employ the following code:
+This subsequent analysis aims to shed light on which city's customers have made the most substantial expenditures at store.
+To initiate this computation, can employ the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 purchases_city = dataset %>%
@@ -461,7 +489,8 @@ purchases_city_1000s
 In the interest of enhanced readability and charting, it's a commonplace practice to divide the values in the Purchases column by 1000.
 This pragmatic approach aligns with prevailing conventions in the business and accounting realms, rendering large numbers more accessible for interpretation and graphical representation.
 
-With the requisite table in place, next step involves visualizing the outcomes. To achieve this, can utilize the following code:
+With the requisite table in place, next step involves visualizing the outcomes.
+To achieve this, can utilize the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 purchaseCity_vis = ggplot(data = purchases_city_1000s, aes(x = City_Category, 
@@ -492,7 +521,8 @@ customers = dataset %>%
 head(customers)
 ```
 
-This code snippet will yield a table that encapsulates the total number of purchases associated with each unique User_ID. Subsequently, can proceed to extract meaningful insights from this data, shedding light on the shopping behaviors across different cities.
+This code snippet will yield a table that encapsulates the total number of purchases associated with each unique User_ID.
+Subsequently, can proceed to extract meaningful insights from this data, shedding light on the shopping behaviors across different cities.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 customers_City =  dataset %>%
@@ -528,11 +558,12 @@ grid.arrange(purchaseCity_vis, city_count_purchases_vis, ncol = 2)
 ```
 
 \newpage
+
 # Chapter 3
 
 ## Results and Discussion
 
-The similarity in the distribution patterns between the "Total Count of Purchases" chart and the "Total Customer Purchase Amount" chart indeed implies that customers from City B are making a higher number of purchases rather than opting for more expensive products.
+The similarity in the distribution patterns between the *"Total Count of Purchases"* chart and the "Total Customer Purchase Amount" chart indeed implies that customers from City B are making a higher number of purchases rather than opting for more expensive products.
 
 This insight gains traction from the observation that if the case were otherwise, where customers from City B bought more expensive products, likely encounter a scenario where a lower count of purchases correlates with a higher total purchase amount.
 
@@ -571,7 +602,6 @@ As shift focus to another variable, the journey of exploration continues.
 
 Certainly, can proceed by examining the distribution of customers who have resided in their respective cities for the longest duration.
 This exploration will provide insights into the longevity of customer relationships with their residing cities, potentially offering valuable insights into shopping behaviors and patterns influenced by the length of city residence.
-
 To commence this analysis, can employ the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
@@ -582,7 +612,8 @@ customers_stay = dataset %>%
 head(customers_stay)
 ```
 
-Now that dataset in order, plot and explore. Lets see where most of customers are living.This code will generate a table that encapsulates the total number of purchases for each unique User_ID, categorized by the duration of their stay in their current city.
+Now that dataset in order, plot and explore.
+Lets see where most of customers are living.This code will generate a table that encapsulates the total number of purchases for each unique User_ID, categorized by the duration of their stay in their current city.
 
 Subsequently, analysis can delve into this data to reveal trends and patterns that might emerge from the distribution of customers' residence duration.
 
@@ -607,7 +638,9 @@ customers_stay_vis = ggplot(data = customers_stay,
 print(customers_stay_vis)
 ```
 
-Certainly, a stacked bar chart can provide a clearer visualization of the distribution of customers based on their length of residency within their respective cities, categorized by City_Category. This chart will aid in uncovering any variations in residency patterns across different city categories. Create this stacked bar chart using the following code:
+Certainly, a stacked bar chart can provide a clearer visualization of the distribution of customers based on their length of residency within their respective cities, categorized by City_Category.
+This chart will aid in uncovering any variations in residency patterns across different city categories.
+Create this stacked bar chart using the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 stay_cities = customers_stay %>%
@@ -627,7 +660,8 @@ x = "City",
 fill = "Stay Years")
 ```
 
-This code snippet generates a stacked bar chart that segregates customers' length of residency based on different city categories. This visualization will facilitate the identification of any discernible trends or patterns in customer residency duration across distinct city segments.
+This code snippet generates a stacked bar chart that segregates customers' length of residency based on different city categories.
+This visualization will facilitate the identification of any discernible trends or patterns in customer residency duration across distinct city segments.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 ggplot(data = stay_cities, aes(x = City_Category, y = n, 
@@ -640,16 +674,17 @@ ggplot(data = stay_cities, aes(x = City_Category, y = n,
             fill = "Stay Years")
 ```
 
-Indeed, observation is accurate and insightful. The stacked bar chart effectively illustrates the distribution of the total customer base across various city categories, segmented by the duration of their residency.
-A consistent trend emerges across all City_Category segments, where the most prevalent duration of residence for customers is one year.
+Indeed, observation is accurate and insightful.
+The stacked bar chart effectively illustrates the distribution of the total customer base across various city categories, segmented by the duration of their residency.A consistent trend emerges across all City_Category segments, where the most prevalent duration of residence for customers is one year.
 
-This commonality in the predominant residency duration across different city categories highlights the potential influence of this temporal aspect on shopping behaviors. The analysis offers valuable insights into how customer behaviors might correlate with the length of time they have resided in their current cities.
-
+This commonality in the predominant residency duration across different city categories highlights the potential influence of this temporal aspect on shopping behaviors.
+The analysis offers valuable insights into how customer behaviors might correlate with the length of time they have resided in their current cities.
 As a delve into another aspect of analysis, journey of exploration continues to unravel intricate patterns within the dataset.
 
 ### Purchase
 
-Certainly, let's delve into the analysis regarding store customers and their purchasing behavior.Initial step involves calculating the total purchase amount attributed to each User_ID. This computation can offer insights into the shopping habits and expenditure patterns of individual customers.To initiate this analysis, can utilize the following code:
+Certainly, let's delve into the analysis regarding store customers and their purchasing behavior.Initial step involves calculating the total purchase amount attributed to each User_ID.
+This computation can offer insights into the shopping habits and expenditure patterns of individual customers.To initiate this analysis, can utilize the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 customers_total_purchase_amount = dataset %>%
@@ -668,7 +703,8 @@ customers_total_purchase_amount = arrange(customers_total_purchase_amount,
 head(customers_total_purchase_amount)
 ```
 
-Looks like User ID 1004277 is top spender. Lets use summary() to see other facets of total customer spending data.
+Looks like User ID 1004277 is top spender.
+Lets use summary() to see other facets of total customer spending data.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 summary(customers_total_purchase_amount)
@@ -698,10 +734,11 @@ ggplot(customers_total_purchase_amount, aes(Purchase_Amount)) +
 
 ### Interpretation of the density plot
 
-Interpretation of the density plot is accurate. The observed right (positive) skewness and the extended tail signify that a substantial number of purchase amounts lie higher than the mean. Additionally, the distribution doesn't align with a standard normal distribution.
+Interpretation of the density plot is accurate.
+The observed right (positive) skewness and the extended tail signify that a substantial number of purchase amounts lie higher than the mean.
+Additionally, the distribution doesn't align with a standard normal distribution.
 
 The peak density around the 250,000 mark indicates that the highest concentration of purchases occurs within this range.This insight corroborates the notion that a significant proportion of customers are making purchases around this amount.
-
 Understanding the distribution of purchase amounts is crucial for retailers in tailoring their marketing strategies, discounts, and promotionsto effectively engage with their customer base.
 
 This detailed analysis of purchase amounts provides valuable insights into customer spending behavior, further enhancing understanding of the dataset's dynamics.As continue to explore various facets of the data, journey of analysis unfolds, potentially revealing more intricate patterns and trends.
@@ -726,7 +763,7 @@ dataset_maritalStatus$Marital_Status = as.character(dataset_maritalStatus$Marita
 typeof(dataset_maritalStatus$Marital_Status)
 ```
 
-Approach of assuming that 1 represents "married" and 0 represents "single" for the marital status variable is a reasonable approach given the absence of clear guidance in the dataset's variable descriptions.While it's always ideal to verify such information with the data provider, making educated assumptions based on context and conventional interpretations can help proceed with analysis.
+Approach of assuming that 1 represents "*married*" and 0 represents "*single*" for the marital status variable is a reasonable approach given the absence of clear guidance in the dataset's variable descriptions.While it's always ideal to verify such information with the data provider, making educated assumptions based on context and conventional interpretations can help proceed with analysis.
 
 This assumption aligns with common conventions and allows to continue exploring the relationships between marital status and other variables within the dataset.However, do keep inmind that assumptions like these should be documented and clearly communicated when presenting findings to ensure transparency in analysis.
 
@@ -743,7 +780,8 @@ Indeed, observation aligns with the dataset's pattern, revealing that a signific
 This insight is valuable in understanding the demographic composition of the customer base.
 
 Extending this analysis, exploring the distribution of Marital_Status within different City_Category segments can provide further insights into how marital status varies across different geographical areas.
-This investigation can shed light on potential regional patterns in shopping behaviors. Conduct this analysis by employing the following code:
+This investigation can shed light on potential regional patterns in shopping behaviors.
+Conduct this analysis by employing the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 dataset_maritalStatus = dataset_maritalStatus %>%
@@ -771,7 +809,7 @@ ggplot(data = maritalStatus_cities, aes(x = City_Category, y = n,
 
 Observation about the distribution of single shoppers across different city categories is insightful and provides an initial understanding of how marital status may vary geographically.
 
-Moving forward, can delve into the distribution of "Stay_in_Current_City" within each City_Category.This investigation aims to uncover patterns in the duration of customers' current city residence across different city segments.
+Moving forward, can delve into the distribution of "*Stay_in_Current_City*" within each City_Category.This investigation aims to uncover patterns in the duration of customers' current city residence across different city segments.
 Conduct this analysis using the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
@@ -781,7 +819,8 @@ Users_Age = dataset %>%
 head(Users_Age)
 ```
 
-This code generates a table that compiles the count of customers based on the duration of their stay in their current city, segmented by different city categories. Visualizing this data will help understand how customer residence durations differ across various city segments, potentially unveiling trends and insights about customer behaviors and preferences.
+This code generates a table that compiles the count of customers based on the duration of their stay in their current city, segmented by different city categories.
+Visualizing this data will help understand how customer residence durations differ across various city segments, potentially unveiling trends and insights about customer behaviors and preferences.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 dataset_maritalStatus = dataset_maritalStatus %>%
@@ -830,11 +869,15 @@ City_C_stay_vis = ggplot(data = City_C, aes(x = Age, y = ..count..,
 grid.arrange(City_A_stay_vis, City_B_stay_vis, City_C_stay_vis, ncol = 3)
 ```
 
-Observation regarding the distribution of shoppers over the age of 45 in City A compared to other cities is astute. Indeed, demographic factors such as age distribution can influence various aspects of customer behaviors, including marital status and residency durations.
+Observation regarding the distribution of shoppers over the age of 45 in City A compared to other cities is astute.
+Indeed, demographic factors such as age distribution can influence various aspects of customer behaviors, including marital status and residency durations.
 
-The interplay between age distribution, marital status, and residency durations can lead to nuanced patterns in each city category. As a mentioned, these factors can collectively shape the resulting levels of marital status within individual cities. This holistic understanding is crucial for retailers and marketers to tailor their strategies and offerings to effectively engage with specific customer segments.
+The interplay between age distribution, marital status, and residency durations can lead to nuanced patterns in each city category.
+As a mentioned, these factors can collectively shape the resulting levels of marital status within individual cities.
+This holistic understanding is crucial for retailers and marketers to tailor their strategies and offerings to effectively engage with specific customer segments.
 
-By piecing together various variables and their relationships, effectively unraveling the complexity of customer behaviors within different city categories. As a delve further into the dataset, gaining deeper insights into the dynamics of customer interactions with the store.Analysis showcases the power of data exploration in uncovering hidden trends and patterns.
+By piecing together various variables and their relationships, effectively unraveling the complexity of customer behaviors within different city categories.
+As a delve further into the dataset, gaining deeper insights into the dynamics of customer interactions with the store.Analysis showcases the power of data exploration in uncovering hidden trends and patterns.
 
 ### Top Shoppers
 
@@ -861,7 +904,9 @@ head(top_shoppers)
 In this code snippet, filter the dataset to include information about the top shopper (User_ID 1001680), selecting relevant columns such as User_ID, Gender, Age, City_Category, Stay_In_Current_City_Years, and Marital_Status.
 Then perform a left join with the dataset containing total purchase amounts by User_ID.
 
-The resulting top_shopper_combined dataset will offer a consolidated view of this top shopper's demographic information alongside their total purchase amount, providing a comprehensive profile of their shopping behavior.Explore and visualize this combined dataset to gain deeper insights into the shopping patterns of this top shopper. This analysis can contribute to understanding the behaviors of high-frequency shoppers and potentially inform strategies for customer engagement and retention.
+The resulting top_shopper_combined dataset will offer a consolidated view of this top shopper's demographic information alongside their total purchase amount, providing a comprehensive profile of their shopping behavior.Explore and visualize this combined dataset to gain deeper insights into the shopping patterns of this top shopper.
+
+This analysis can contribute to understanding the behaviors of high-frequency shoppers and potentially inform strategies for customer engagement and retention.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 top_shoppers = mutate(top_shoppers,
@@ -883,7 +928,6 @@ Analysis highlights interesting patterns among the top shoppers.
 The contrast between User_ID 1005069 and User_ID 1003902 is particularly intriguing: while User_ID 1005069 has the highest average purchase amount, User_ID 1003902 boasts a significantly higher total purchase amount.These differences underscore the significance of considering both average and total purchase amounts when evaluating customer spending behaviors.
 
 High average purchase amounts can indicate a willingness to spend more on individual transactions, while high total purchase amounts reflect a greater cumulative expenditure over multiple transactions.
-
 These insights can inform marketing strategies, tailored offers, and customer engagement efforts.Understanding the spending dynamics of individual customers provides valuable guidance for optimizing retail operations and enhancing customer satisfaction.As an analysis continues, painting a detailed picture of the top shoppers' behaviors, ultimately contributing to a more comprehensive understanding of the dataset's dynamics.
 
 ### Occupation
@@ -901,7 +945,8 @@ customers_Occupation =  dataset %>%
 head(customers_Occupation)
 ```
 
-Now that dataset necessary, group together the total Purchase_Amount for each Occupation identifier. Then convert Occupation to a charater data type.
+Now that dataset necessary, group together the total Purchase_Amount for each Occupation identifier.
+Then convert Occupation to a charater data type.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 totalPurchases_Occupation = customers_Occupation %>%
@@ -944,15 +989,11 @@ Looks like customers labeled as Occupation 4 spent the most at store on Black Fr
 ### Apriori (Association Rule Learning)
 
 Certainly, the explanation of Association Rule Learning provided is accurate and insightful.
-
 Association Rule Learning, epitomized by the Apriori algorithm, holds immense potential for retailers and businesses seeking to uncover hidden patterns in customer purchasing behaviors.
-
 By identifying associations between items frequently purchased together, businesses can strategically optimize product placement, cross-selling, and promotional campaigns to enhance sales and customer engagement [4].
 
-Apriori algorithm, in particular, strives to unearth the most probable associations among items, enabling the generation of rules like "People who bought item A also bought item B." This algorithm's applications extend beyond retail to various domains, including recommendation systems, market basket analysis, and more [5][6].
-
+Apriori algorithm, in particular, strives to unearth the most probable associations among items, enabling the generation of rules like "*People who bought item A also bought item B.*" This algorithm's applications extend beyond retail to various domains, including recommendation systems, market basket analysis, and more [5][6].
 As an embark on implementing the Apriori algorithm using the arules package, ensure that have imported the required libraries to facilitate the analysis.
-
 If haven't imported the libraries yet, can use the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
@@ -973,12 +1014,10 @@ library(tidyverse)
 ```
 
 With these libraries in place, well-equipped to proceed with Association Rule Learning analysis.
-
 This endeavor will yield valuable insights into purchase associations, aiding retailers in optimizing their strategies and enhancing customer experiences.
+
 If need assistance with the implementation or interpretation of the Apriori algorithm, to reach out for guidance.
-
 The arules package was developed specifically to deal with Association Rule and Frequent Itemset mining.
-
 In order to begin analysis, retrieve the necessary data from the original dataset and then apply the correct formatting.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
@@ -1005,13 +1044,12 @@ customers_products = customers_products[-1,]
 ```
 
 Explanation of the process to prepare the data for the Apriori algorithm is accurate.
-
 The Apriori algorithm indeed requires a binary format, where products are represented as columns, and a value of 1 indicates that a customer purchased that product, while a value of 0 indicates no purchase.
 
 This transformation from the original dataset to a sparse matrix format is a necessary step to facilitate the Apriori algorithm's analysis.
 Here's how can perform this transformation using the arules library:
 
-1.  Save  customers_products table as a CSV file.
+1.  Save customers_products table as a CSV file.
 
 2.  Use the read.transactions() function to read the CSV file and convert it into the required sparse matrix format.
 
@@ -1030,44 +1068,51 @@ Before implement the Apriori algorithm to problem, lets take a look at newly cre
 summary(customersProducts)
 ```
 
-Analysis and interpretation of the sparse matrix characteristics are accurate. The summary of the sparse matrix provides essential insights into the data's density, showcasing the proportion of non-zero (1) values compared to zero (0) values.
+Analysis and interpretation of the sparse matrix characteristics are accurate.
+The summary of the sparse matrix provides essential insights into the data's density, showcasing the proportion of non-zero (1) values compared to zero (0) values.
 
 This density value, which is approximately 0.009, indicates that around 0.9% of the entries in the sparse matrix are non-zero, implying that 99.1% of the matrix entries are zero.Additionally, the frequent items identified in the summary of the sparse matrix align with the insights uncovered during Exploratory Data Analysis.
 
-This congruence underscores the consistency and reliability of findings across different stages of analysis. Extract the most frequent items from the sparse matrix using the following code:
+This congruence underscores the consistency and reliability of findings across different stages of analysis.
+Extract the most frequent items from the sparse matrix using the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 summary(customersProducts)
 ```
 
-The itemFrequency() function calculates the frequency of each item in the transactions data, and head() is used to display the top 10 most frequent items. Comparing these results to earlier analyses helps validate the accuracy of insights.
+The itemFrequency() function calculates the frequency of each item in the transactions data, and head() is used to display the top 10 most frequent items.
+Comparing these results to earlier analyses helps validate the accuracy of insights.
 
 By cross-referencing and confirming findings through multiple analyses, ensuring the robustness of conclusions and contributing to a more comprehensive understanding of customer purchase behaviors.
 
 To continue analysis, and if any further questions or need assistance with interpreting the results of the Apriori algorithm, don't hesitate to ask.
-1. P00265242 = 1858 
-2. P00110742 = 1591 
-3. P00025442 = 1586 
-4. P00112142 = 1539 
-5. P00057642 = 1430 
-6. (Other) = 536489 
 
-Now lets compare it to what discovered earlier. "Looks like top 5 best sellers are (by product ID)" 
+1.  P00265242 = 1858
+2.  P00110742 = 1591
+3.  P00025442 = 1586
+4.  P00112142 = 1539
+5.  P00057642 = 1430
+6.  (Other) = 536489
 
-1. P00265242 = 1858 
-2. P00110742 = 1591 
-3. P00025442 = 1586 
-4. P00112142 = 1539 
-5. P00057642 = 1430
+Now lets compare it to what discovered earlier.
+"*Looks like top 5 best sellers are (by product ID)*"
+
+1.  P00265242 = 1858
+2.  P00110742 = 1591
+3.  P00025442 = 1586
+4.  P00112142 = 1539
+5.  P00057642 = 1430
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 summary(customersProducts)
 ```
 
-Interpretation of the "element length distribution" is accurate.
-The mean value of 92.41 indicates the average number of items in a customer's basket. However, considering the presence of customers who purchased a significantly larger number of items, the median value of 54.00 items can provide a more representative measure of the central tendency of the distribution.
+Interpretation of the "*element length distribution*" is accurate.
+The mean value of 92.41 indicates the average number of items in a customer's basket.
+However, considering the presence of customers who purchased a significantly larger number of items, the median value of 54.00 items can provide a more representative measure of the central tendency of the distribution.
 
-Using the median value to assess the typical number of items per customer is a prudent approach,as it is less influenced by outlier values and provides a more balanced representation of the dataset. To create an item frequency plot using the arules package, use the following code:
+Using the median value to assess the typical number of items per customer is a prudent approach,as it is less influenced by outlier values and provides a more balanced representation of the dataset.
+To create an item frequency plot using the arules package, use the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 itemFrequencyPlot(customersProducts, topN = 25)    # topN is limiting to the top 50 products
@@ -1076,23 +1121,25 @@ itemFrequencyPlot(customersProducts, topN = 25)    # topN is limiting to the top
 In this code, itemFrequencyPlot() generates a bar plot that displays the frequency of each item's occurrence in the transactions data.
 The support parameter specifies the minimum level of support an item should have to be included in the plot, and the col parameter sets the color of the bars in the plot.
 
-This plot will visually illustrate the frequency distribution of different items in customer baskets, providing insights into the most commonly purchased products. As continue with analysis, delving deeper into the transactional patterns of customers, gaining a richer understanding of their shopping behaviors.If further questions or if ready to explore the results of the Apriori algorithm.
+This plot will visually illustrate the frequency distribution of different items in customer baskets, providing insights into the most commonly purchased products.
+As continue with analysis, delving deeper into the transactional patterns of customers, gaining a richer understanding of their shopping behaviors.If further questions or if ready to explore the results of the Apriori algorithm.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 itemFrequencyPlot(customersProducts, topN = 25)    # topN is limiting to the top 50 products
 ```
 
-Explanation of setting the parameters for the Apriori algorithm is clear and accurate. The choice of support and confidence values plays a critical role in determining the rules generated by the algorithm.
+Explanation of setting the parameters for the Apriori algorithm is clear and accurate.
+The choice of support and confidence values plays a critical role in determining the rules generated by the algorithm.
 
 These values guide the algorithm to identify significant associations between items based on the frequency of occurrence and the strength of the relationship.Setting the support value involves establishing a minimum threshold for the number of transactions that an item must be present in.
 This threshold helps filter out less frequent items that may not contribute significantly to meaningful rules.
 
 In this example, aim to select products that were purchased by at least 50 different customers, and calculate the support value as a ratio of this threshold to the total number of transactions.Similarly, the confidence value serves as a threshold for the strength of the rule's prediction.
 
-A higher confidence value ensures that the rules generated are more likely to be accurate and relevant.Starting with a default confidence value of 0.80 and then adjusting it based on domain knowledge and the desired outcome is a pragmatic approach. Step-by-step approach to selecting these parameters reflects a thoughtful process of refining the algorithm's behavior to yield valuable insights that align with analysis goals.
+A higher confidence value ensures that the rules generated are more likely to be accurate and relevant.Starting with a default confidence value of 0.80 and then adjusting it based on domain knowledge and the desired outcome is a pragmatic approach.
+Step-by-step approach to selecting these parameters reflects a thoughtful process of refining the algorithm's behavior to yield valuable insights that align with analysis goals.
 
 As a move forward with implementing the Apriori algorithm using these parameters, paving the way to uncovering significant associations among purchased items.This analysis will aid in optimizing product placement, recommendations, and promotional strategies for the retail store.
-
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 rules = apriori(data = customersProducts,
@@ -1102,16 +1149,16 @@ rules = apriori(data = customersProducts,
 # no time limit
 ```
 
-It looks like apriori has created 7 rules in accordance to specified parameters. "writing ... [7 rule(s)] done [0.48s]." Now, lets examine results to get a better idea of how algoritm worked.
+It looks like apriori has created 7 rules in accordance to specified parameters.
+"writing ... [7 rule(s)] done [0.48s]." Now, lets examine results to get a better idea of how algoritm worked.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 inspect(sort(rules, by = 'lift'))
 ```
 
-Here see the association rules created by apriori algorithm. Let's take a look at rule number 1.
-
+Here see the association rules created by apriori algorithm.
+Let's take a look at rule number 1.
 Description of the output values of the Apriori algorithm is accurate and well-organized.
-
 Provided a clear explanation of each value and its significance in the context of the association rules generated by the algorithm.
 Here's how visualize these rules using the arulesViz package:
 
@@ -1119,42 +1166,44 @@ Here's how visualize these rules using the arulesViz package:
 plot(rules, method = 'graph')
 ```
 
-The plot() function with the method parameter set to "scatterplot" generates a scatterplot that displays the relationship between support, confidence, and lift for each rule.
-
+The plot() function with the method parameter set to "*scatterplot*" generates a scatterplot that displays the relationship between support, confidence, and lift for each rule.
 This visualization can help quickly grasp the distribution of rules and their characteristics, aiding in the identification of meaningful and impactful associations.
 
-Continuing  analysis by visualizing the generated association rules using the arulesViz package adds another layer of understanding to  insights.
+Continuing analysis by visualizing the generated association rules using the arulesViz package adds another layer of understanding to insights.
 By visually representing these rules, providing a more accessible and intuitive view of the complex relationships within the dataset.
 
-To proceed with the visualization step, and if have any further questions or if  ready to interpret the results of the association rules, I'm here to assist!
+To proceed with the visualization step, and if have any further questions or if ready to interpret the results of the association rules, I'm here to assist!
 
 ```{r}
 rules = apriori(data = customersProducts,
                parameter = list(support = 0.008, confidence = 0.75, maxtime = 0))
 ```
 
-Now that decreased the minimum confidence value to 75%, a total of 171 rules. writing ... [171 rule(s)] done [0.50s]. This is much higher number of rules compared to previous rule list which only contained 7. This should now give us more interesting rules to examine
+Now that decreased the minimum confidence value to 75%, a total of 171 rules.
+writing ...
+[171 rule(s)] done [0.50s].
+This is much higher number of rules compared to previous rule list which only contained 7.
+This should now give us more interesting rules to examine
 
 ```{r}
 inspect(head(sort(rules, by = 'lift'))) # limiting to the top 6 rules
 ```
 
 A new set of rules and the rule with the highest lift value has also changed.
-
 Rule number 1 shows that Customers who bought items P00221142 and P00249642 will also purchase item P00103042 \~76% of the time, given a support of 0.008.
 
 ```{r}
 plot(rules, method = 'graph', max = 25)
 ```
 
-Now that 7 rules, this visualization becomes alot more difficult to interpret. Instead, create a matrix and have a similar plot and clearer interpretation.
+Now that 7 rules, this visualization becomes alot more difficult to interpret.
+Instead, create a matrix and have a similar plot and clearer interpretation.
 
 ```{r}
 plot(rules, method = 'grouped', max = 25)
 ```
 
 In this visualization, can see that LHS on top and on the right hand side, the corresponding RHS.
-
 The size of the bubbles represents the support value of the rule and the fill/color represents the lift
 
 \newpage
@@ -1163,25 +1212,37 @@ The size of the bubbles represents the support value of the rule and the fill/co
 
 ## Conclusion
 
-Summary provides a comprehensive overview of the key insights and discoveries that made from Exploratory Data Analysis (EDA) and Association Rule Learning (ARL) analysis of the Black Friday dataset. The Analysis have effectively highlighted the important aspects of analysis, from customer distribution across different categories to identifying top customers, product classifications, and various purchase metrics.
+Summary provides a comprehensive overview of the key insights and discoveries that made from Exploratory Data Analysis (EDA) and Association Rule Learning (ARL) analysis of the Black Friday dataset.The Analysis have effectively highlighted the important aspects of analysis, from customer distribution across different categories to identifying top customers, product classifications, and various purchase metrics.
 
-In the context of Association Rule Learning, highlighted the significance of discovering associations among items and how these insights can be leveraged by retailers to optimize product placement, recommendations, and marketing strategies.Summary effectively captures the essence of analytical journey, showcasing  meticulous exploration of the dataset and the valuable insights extracted. This kind of summary is not only informative but also demonstrates the depth and quality of analysis to others, might be interested in findings.
+In the context of Association Rule Learning, highlighted the significance of discovering associations among items and how these insights can be leveraged by retailers to optimize product placement, recommendations, and marketing strategies.Summary effectively captures the essence of analytical journey, showcasing meticulous exploration of the dataset and the valuable insights extracted.
 
-The Exploratory Data Analysis (EDA) and Association Rule Learning (ARL) analysis of the Black Friday dataset have yielded valuable insights, providing a comprehensive understanding of customer behavior and purchase patterns. The analysis has successfully covered a range of critical aspects, including customer distribution across different categories, identification of top customers, product classifications, and various purchase metrics.
+This kind of summary is not only informative but also demonstrates the depth and quality of analysis to others, might be interested in findings.
+The Exploratory Data Analysis (EDA) and Association Rule Learning (ARL) analysis of the Black Friday dataset have yielded valuable insights, providing a comprehensive understanding of customer behavior and purchase patterns.
+The analysis has successfully covered a range of critical aspects, including customer distribution across different categories, identification of top customers, product classifications, and various purchase metrics.
 
-In the realm of EDA, the analysis showcased meticulous exploration of the dataset, uncovering significant trends and relationships. The distribution of customers across categories was thoroughly examined, shedding light on preferences and trends. The identification of top customers contributes to a nuanced understanding of high-value segments. Additionally, the analysis delved into product classifications, offering a detailed perspective on the product landscape and its implications for sales and marketing strategies.
+In the realm of EDA, the analysis showcased meticulous exploration of the dataset, uncovering significant trends and relationships.
+The distribution of customers across categories was thoroughly examined, shedding light on preferences and trends.
+The identification of top customers contributes to a nuanced understanding of high-value segments.
+Additionally, the analysis delved into product classifications, offering a detailed perspective on the product landscape and its implications for sales and marketing strategies.
 
-The Association Rule Learning analysis emphasized the importance of discovering associations among items. Insights derived from this analysis can be leveraged by retailers to optimize product placement, enhance recommendations, and refine marketing strategies. The potential impact of these findings on retail operations is substantial, as retailers can strategically position products and tailor marketing efforts based on observed associations among items.
+The Association Rule Learning analysis emphasized the importance of discovering associations among items.
+Insights derived from this analysis can be leveraged by retailers to optimize product placement, enhance recommendations, and refine marketing strategies.
+The potential impact of these findings on retail operations is substantial, as retailers can strategically position products and tailor marketing efforts based on observed associations among items.
 
 ### Limitations of the Analysis
 
-However, it is crucial to acknowledge the limitations of the analysis. The insights generated are based on the available data, and the findings may not be universally applicable to all retail contexts. Furthermore, the analysis may be sensitive to data quality, and any inaccuracies or biases in the dataset could impact the robustness of the results.
+However, it is crucial to acknowledge the limitations of the analysis.
+The insights generated are based on the available data, and the findings may not be universally applicable to all retail contexts.
+Furthermore, the analysis may be sensitive to data quality, and any inaccuracies or biases in the dataset could impact the robustness of the results.
 
 ### Future Work
 
-Looking ahead, future work could focus on expanding the dataset to include more diverse and granular information. Additionally, refining the models used in the analysis and exploring advanced techniques could further enhance the accuracy and depth of insights. Incorporating external factors, such as economic indicators or seasonal trends, could also provide a more holistic understanding of consumer behavior during Black Friday or other sales events.
+Looking ahead, future work could focus on expanding the dataset to include more diverse and granular information.
+Additionally, refining the models used in the analysis and exploring advanced techniques could further enhance the accuracy and depth of insights.
+Incorporating external factors, such as economic indicators or seasonal trends, could also provide a more holistic understanding of consumer behavior during Black Friday or other sales events.
 
-In conclusion, the report's summary effectively captures the depth and quality of the analytical journey, showcasing not only the informative nature of the findings but also the potential implications for retailers. While recognizing the limitations, the report sets the stage for future research and improvements in methodology, ensuring a continuous and evolving understanding of consumer behavior in the context of Black Friday sales.
+In conclusion, the report's summary effectively captures the depth and quality of the analytical journey, showcasing not only the informative nature of the findings but also the potential implications for retailers.
+While recognizing the limitations, the report sets the stage for future research and improvements in methodology, ensuring a continuous and evolving understanding of consumer behavior in the context of Black Friday sales.
 
 \newpage
 
@@ -1197,7 +1258,8 @@ In conclusion, the report's summary effectively captures the depth and quality o
 # Appendix
 
 ## Packages
-1. <https://www.tidyverse.org/> 
-2. <https://cran.r-project.org/web/packages/scales/scales.pdf> 
-3. <https://cran.r-project.org/web/packages/arules/arules.pdf> 
-4. <https://cran.r-project.org/web/packages/arulesViz/vignettes/arulesViz.pdf>
+
+1.  <https://www.tidyverse.org/>
+2.  <https://cran.r-project.org/web/packages/scales/scales.pdf>
+3.  <https://cran.r-project.org/web/packages/arules/arules.pdf>
+4.  <https://cran.r-project.org/web/packages/arulesViz/vignettes/arulesViz.pdf>
