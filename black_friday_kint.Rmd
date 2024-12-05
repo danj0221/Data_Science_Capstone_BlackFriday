@@ -2,7 +2,7 @@
 title: "**Exploring a Hypothetical Store's Shopper Data Dataset in Anticipation of the Black Friday Holiday Season**"
 author: "Delpagodage Ama Nayanahari Jayaweera"
 subtitle : "Data Science: Capstone Project for Harvardx Professional Data Science Certificate (Choose your own project: PH125.9x)"
-date: '05 November 2024'
+date: '05 December 2024'
 output: 
   pdf_document: 
     toc: yes
