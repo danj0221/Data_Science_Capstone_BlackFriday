@@ -11,7 +11,10 @@
 #Method and Analysis in Exploratory Data Analysis (EDA)                              #
 ###################################################################################### 
 
-# 1. Import the libraries we will be utilizing in this kernel
+######################################################################################
+# 1. Import the libraries we will be utilizing in this kernel                        #
+######################################################################################
+
 if (!require(tidyverse)) {install.packages("tidyverse", repos = "http://cran.us.r-project.org")}
 if (!require(scales)) {install.packages("scales", repos = "http://cran.us.r-project.org")}
 if (!require(arules)) {install.packages("arules", repos = "http://cran.us.r-project.org")}
@@ -27,10 +30,14 @@ library(scales)
 library(arules)
 library(gridExtra)
 
-#2. Load the dataset that be using for this Exploratory Data Analysis (EDA)
+######################################################################################
+#2. Load the dataset that be using for this Exploratory Data Analysis (EDA)          #
+######################################################################################
 dataset = read.csv("BlackFriday.csv")
 
-#3. Overview of the entire dataset.
+######################################################################################
+#3. Overview of the entire dataset.                                                  #
+######################################################################################
 summary(dataset)
 head(dataset)
 
