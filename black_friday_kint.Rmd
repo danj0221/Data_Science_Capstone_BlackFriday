@@ -330,7 +330,7 @@ best_seller = dataset[dataset$Product_ID == 'P00265242', ]
 head(best_seller)
 ```
 
-From analysis, it is evident that this particular product falls within the categorical indices of Product_Category_1 = 5 and Product_Category_2 = 8. As highlighted earlier, the absence of an explicit key detailing item names poses a limitation in identifying the precise nature of this product. An intriguing revelation surfaces as observe variations in the purchase prices of the same product across different customers.
+From analysis, it is evident that this particular product falls within the categorical indices of "*Product_Category_1*" = 5 and "*Product_Category_2*" = 8. As highlighted earlier, the absence of an explicit key detailing item names poses a limitation in identifying the precise nature of this product. An intriguing revelation surfaces as observe variations in the purchase prices of the same product across different customers.
 
 This phenomenon could potentially be attributed to an array of factors, encompassing *"Black Friday"* promotions, discounts, or the utilization of distinct coupon codes. Alternatively, a deeper investigation may be warranted to unearth the underlying rationale for the disparities in purchase prices of an identical product among diverse customers.
 
@@ -443,8 +443,7 @@ customers_location =  dataset %>%
 head(customers_location)
 ```
 
-This table will provide a comprehensive snapshot, pairing each distinct "*User_ID*" with its associated "*City_Category*".
-This will serve as a starting point for us to uncover trends and insights related to shopping behavior based on geographical locations.
+This table will provide a comprehensive snapshot, pairing each distinct "*User_ID*" with its associated "*City_Category*". This will serve as a starting point for us to uncover trends and insights related to shopping behavior based on geographical locations.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 customers_location_vis = ggplot(data = customers_location) +
@@ -666,7 +665,7 @@ customers_total_purchase_amount = arrange(customers_total_purchase_amount,
 head(customers_total_purchase_amount)
 ```
 
-Looks like User ID 1004277 is top spender. Lets use summary() to see other facets of total customer spending data.
+Looks like "*User_ID*" 1004277 is top spender. Lets use summary() to see other facets of total customer spending data.
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 summary(customers_total_purchase_amount)
@@ -866,8 +865,7 @@ top_shoppers = mutate(top_shoppers,
 head(top_shoppers)
 ```
 
-Indeed, the joined table provides a comprehensive view of the shopping behavior of the top shoppers, highlighting both the User_ID with the highest number of total purchases and the "*User_ID*" with the highest total "*Purchase_Amount*".
-Continuing analysis, can compute the average "*Purchase_Amount*" for each user using the following code:
+Indeed, the joined table provides a comprehensive view of the shopping behavior of the top shoppers, highlighting both the "*User_ID*" with the highest number of total purchases and the "*User_ID*" with the highest total "*Purchase_Amount*". Continuing analysis, can compute the average "*Purchase_Amount*" for each user using the following code:
 
 ```{r message=FALSE, warning=FALSE, echo=TRUE}
 top_shoppers_averagePurchase = top_shoppers %>%
@@ -1156,7 +1154,7 @@ The Association Rule Learning analysis emphasized the importance of discovering 
 
 The analysis illuminated significant aspects of the dataset:
 
-1. **Customer Demographics:* Gender and age-specific insights reveal that while male shoppers dominate in numbers, female shoppers demonstrate comparable average spending, suggesting they are a high-value customer segment. The age group 26-35 emerged as the most influential demographic in terms of purchasing behavior.
+1. **Customer Demographics:** Gender and age-specific insights reveal that while male shoppers dominate in numbers, female shoppers demonstrate comparable average spending, suggesting they are a high-value customer segment. The age group 26-35 emerged as the most influential demographic in terms of purchasing behavior.
 2. **Regional Trends:** City B exhibited the highest total purchase values, though City C had a larger customer base, indicating potential for optimizing sales strategies by balancing transaction frequency and product value.
 3. **Product Trends:** The study identified top-selling products, including the best-seller (P00265242), which exhibited consistent popularity across demographics. Pricing discrepancies likely influenced by regional discounts and promotions present an opportunity for retailers to refine pricing strategies.
 4. **Association Rule Learning:** ARL revealed actionable associations among products, providing a foundation for strategic decisions in product bundling, inventory optimization, and targeted marketing.
